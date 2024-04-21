@@ -13,8 +13,12 @@ Screenshots from the application :
 
 <h3>Flowchart</h3>
 
-![FlowChart](preview/flowchart1.png)
-![FlowChart](preview/flowchart2.png)
+|![FlowChart](preview/flowchart1.png) | ![FlowChart](preview/flowchart2.png) | 
+|----------|:----------:|
+
+## Working
+
+The data is collected via Api call and then using Mediator fed into Room Database hence leading to caching in the local database. The URL is then collected from the database and passed to the library which downloads the images and stores it into the Disk Cache. When the Main screen loads, pagination is called and the images are stored in the Memory cache from the disk cache and loaded into the View. 
 
 ## Tech stack 
 
@@ -43,6 +47,24 @@ Screenshots from the application :
 - Local Caching
 - MVVM Architecture
 - Dependency injection with Hilt
+
+## Using the Library 
+
+Include the library imageLoaderX along the root and include in the gradle of the app folder : 
+
+    implementation(project(":imageLoaderX"))
+
+Once build is done, you can use it in the following way : 
+
+
+    ImageLoaderX.Builder(binding.imageView, imageLoader)
+                .url(url)
+                .centerCrop()
+                .withPlaceholder(R.drawable.ic_image)
+                .whenError(R.drawable.ic_image_remove, white)
+                .build()
+                .load()
+
 
 ## Future Scope
   
