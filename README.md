@@ -3,8 +3,8 @@
 
 Screenshots from the application : 
 
-| ![list](preview/preview2.jpg) | ![list](preview/preview3.jpg) |
-|----------|:----------:|
+| ![icon](preview/icon.jpg) | ![splash](preview/splashScreen.jpg) | ![list](preview/mainScreen.jpg) |
+|----------|:----------:|:----------:|
 
 
 <h3>Architecture Used</h3>
@@ -45,10 +45,9 @@ Screenshots from the application :
 - Code Optimisations
 
 
-## Tested on devices 
+## Tested on devices
 
 - Oneplus 9 pro 
 - Samsung S20 FE
 - Samsung A31 
 - Samsung M31s 
-- Pixel Emulators 
