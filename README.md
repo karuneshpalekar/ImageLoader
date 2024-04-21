@@ -11,6 +11,11 @@ Screenshots from the application :
 
 ![Architecture](preview/architecture-graph.png)
 
+<h3>Flowchart</h3>
+
+![FlowChart](preview/flowchart1.png)
+![FlowChart](preview/flowchart2.png)
+
 ## Tech stack 
 
 - [Kotlin][1] based
