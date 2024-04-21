@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.splash.SplashFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_welcome"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+        <TextView
+            android:id="@+id/loading_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/sit_back_and_relax_while_we_set_up"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/welcome" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:indeterminateTint="@color/white"
+            android:progressTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loading_msg"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

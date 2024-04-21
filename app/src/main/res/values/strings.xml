@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ImageLoaderX</string>
+    <string name="welcome">Welcome</string>
+    <string name="sit_back_and_relax_while_we_set_up">Sit back and relax while we set up</string>
+    <string name="almost_there">Almost There</string>
+    <string name="error">There seems an issue, try again later</string>
+</resources>
