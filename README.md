@@ -20,7 +20,7 @@ Screenshots from the application :
 - [LiveData][5] - Notify domain layer data to views.
 - [Navigation][6] - Handle everything needed for in-app navigation.
 - [ViewModel][7] - UI-related data holder, lifecycle aware.
-- [Hilt][8] - For [dependency injection][10].
+- [Hilt][8] - For DI
 
 [1]: https://kotlinlang.org/
 [2]: https://kotlinlang.org/docs/reference/coroutines-overview.html
@@ -29,8 +29,7 @@ Screenshots from the application :
 [5]: https://developer.android.com/topic/libraries/architecture/livedata
 [6]: https://developer.android.com/jetpack/compose/navigation
 [7]: https://developer.android.com/topic/libraries/architecture/viewmodel
-[8]: https://dagger.dev/hilt/
-[9]: https://developer.android.com/training/dependency-injection/hilt-android
+[8]: https://developer.android.com/training/dependency-injection/hilt-android
 
 ## Features
 
